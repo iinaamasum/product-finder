@@ -41,11 +41,11 @@
   <main class="container">
     <div class="row my-4">
       <div class="col-4">
-        <h4 class="btn btn-outline-dark col-12 text-center py-1" id="left__header__1">All Catagory</h4>
-        <h4 class="btn btn-outline-dark col-12 text-center py-1" id="electronics">Electronics</h4>
-        <h4 class="btn btn-outline-dark col-12 text-center py-1" id="left__header__3">Men's Clothing</h4>
-        <h4 class="btn btn-outline-dark col-12 text-center py-1" id="left__header__4">Women's Clothing</h4>
-        <h4 class="btn btn-outline-dark col-12 text-center py-1" id="left__header__5">Jewelery</h4>
+        <h4 class="btn btn-outline-dark col-12 text-center py-1" onclick="getProduct('all')">All Catagory</h4>
+        <h4 class="btn btn-outline-dark col-12 text-center py-1" onclick="getProduct('elec')">Electronics</h4>
+        <h4 class="btn btn-outline-dark col-12 text-center py-1" onclick="getProduct('man')">Men's Clothing</h4>
+        <h4 class="btn btn-outline-dark col-12 text-center py-1" onclick="getProduct('women')">Women's Clothing</h4>
+        <h4 class="btn btn-outline-dark col-12 text-center py-1" onclick="getProduct('jewe')">Jewelery</h4>
       </div>
       <div class="col-8">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -97,20 +97,7 @@
 
   <!-- card section  -->
   <section class="container mx-auto">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
+    <div id="api__card__row" class="row row-cols-1 row-cols-md-3 g-4">
     </div>
   </section>
   <!-- bootstrap script  -->
