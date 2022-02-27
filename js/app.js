@@ -1,4 +1,5 @@
 const getProduct = (id) => {
+  document.getElementById('spinner').style.display = 'block';
   let url = `https://fakestoreapi.com/products`;
   if (id == 'jewe') {
     url = `https://fakestoreapi.com/products/category/jewelery`;
@@ -17,6 +18,7 @@ const getProduct = (id) => {
 };
 getProduct(true);
 const updateCard = (data) => {
+  document.getElementById('spinner').style.display = 'none';
   console.log(data);
   document.getElementById('api__card__row').textContent = '';
   data.forEach((info) => {
